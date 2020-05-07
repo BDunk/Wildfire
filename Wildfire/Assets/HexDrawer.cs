@@ -22,11 +22,14 @@ public class HexDrawer : MonoBehaviour
             {
                 Debug.Log(ii.ToString()+", "+jj.ToString()+"    ");
 
+                if (Mathf.Abs(ii+jj)<max+1)
+                {
                 Vector3 newPosition = u * ii + v * jj;
 
                 GameObject newTile = Instantiate(tile);
 
                 newTile.transform.position = newPosition;
+                }
                 
             }
                 
