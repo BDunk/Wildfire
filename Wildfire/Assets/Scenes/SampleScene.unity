@@ -1016,15 +1016,14 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989743045}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6a6a2f71d7f743c1bffdfd4df944cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hexTileTemplate: {fileID: 3107955250421682389, guid: 89c31da1a26474b699de5c3992cfc888,
-    type: 3}
+  hexTileTemplate: {fileID: 0}
 --- !u!154 &1989743047
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -1112,7 +1111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d6ec55f6be744f0beedf3deb95861b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoardSize: 2
+  BoardSize: 5
   tile: {fileID: 2970821901241069232, guid: 2843a260fc97e4ea1a964c6f15e9f586, type: 3}
 --- !u!4 &2036103142
 Transform:
