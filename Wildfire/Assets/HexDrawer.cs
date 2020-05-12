@@ -30,7 +30,6 @@ public class HexDrawer : MonoBehaviour
                 GameObject newTile = Instantiate(tile);
 
                 newTile.transform.position = newPosition;
-                newTile.Properties.uCoordinate;
                 }
                 
             }

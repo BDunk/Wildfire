@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Properties
+public class Properties : MonoBehaviour
 {
     public int uCoordinate;
     public int vCoordinate;
