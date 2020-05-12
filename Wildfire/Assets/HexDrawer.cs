@@ -8,12 +8,14 @@ public class HexDrawer : MonoBehaviour
     Vector3 u = new Vector3 (Mathf.Sin(30),0,Mathf.Cos(30));
     Vector3 v = new Vector3 (Mathf.Sin(30),0,-Mathf.Cos(30));
     public GameObject tile;
+    public GameObject[,] array;
 
     
     // Start is called before the first frame update
     void Start()
     {
         int max = (BoardSize-1)/2;
+        array = new GameObject[BoardSize,BoardSize];
 
         for (int ii=-max;ii<=max;ii++)
         {
@@ -25,11 +27,16 @@ public class HexDrawer : MonoBehaviour
                 if (Mathf.Abs(ii+jj)<max+1)
                 {
 
-                Vector3 newPosition = u * ii + v * jj;
+                    Vector3 newPosition = u * ii + v * jj;
 
-                GameObject newTile = Instantiate(tile);
+                    GameObject newTile = Instantiate(tile);
 
-                newTile.transform.position = newPosition;
+                    newTile.transform.position = newPosition;
+
+                    newTile.GetComponent<Coordinate>().uCoordinate=ii;
+                    newTile.GetComponent<Coordinate>().vCoordinate=jj;
+                    
+                    array[ii+max,jj+max] = newTile;
                 }
                 
             }
