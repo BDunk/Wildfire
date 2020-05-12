@@ -24,11 +24,15 @@ public class HexDrawer : MonoBehaviour
 
                 if (Mathf.Abs(ii+jj)<max+1)
                 {
-                Vector3 newPosition = u * ii + v * jj;
 
-                GameObject newTile = Instantiate(tile);
+                Hexagon John = new Hexagon(ii,jj);
 
-                newTile.transform.position = newPosition;
+
+                //Vector3 newPosition = u * ii + v * jj;
+
+                //GameObject newTile = Instantiate(tile);
+
+                //newTile.transform.position = newPosition;
                 }
                 
             }

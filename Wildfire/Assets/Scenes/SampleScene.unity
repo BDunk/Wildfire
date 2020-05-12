@@ -873,7 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BoardSize: 5
-  tile: {fileID: 2970821901241069232, guid: 2843a260fc97e4ea1a964c6f15e9f586, type: 3}
+  tile: {fileID: 2075999660950265770, guid: 89c31da1a26474b699de5c3992cfc888, type: 3}
 --- !u!4 &2036103142
 Transform:
   m_ObjectHideFlags: 0
@@ -900,6 +900,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d507135a0ac334e0dbedc7de533297e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uCoordinate: 0
+  vCoordinate: 0
+  template: {fileID: 2075999660950265770, guid: 89c31da1a26474b699de5c3992cfc888,
+    type: 3}
 --- !u!1 &2100957005
 GameObject:
   m_ObjectHideFlags: 0
